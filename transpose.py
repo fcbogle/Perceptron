@@ -28,7 +28,7 @@ y = df['MEDV'].values.reshape(-1, 1)
 X = np.c_[np.ones(X.shape[0]), X]
 
 # Ridge regularization parameter (try tuning this)
-alpha = 1.0
+alpha = 0.01
 
 # Perform matrix algebra with Ridge regularization
 X_transpose = X.T
